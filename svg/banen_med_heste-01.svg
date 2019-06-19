@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke: #000;
+      }
+
+      .cls-1, .cls-10, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1 {
+        stroke-width: 6.87px;
+      }
+
+      .cls-2 {
+        fill: #8c6239;
+      }
+
+      .cls-2, .cls-9 {
+        stroke-width: 3.5px;
+      }
+
+      .cls-3 {
+        fill: #006837;
+        stroke-width: 6px;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        stroke: #fff;
+      }
+
+      .cls-10, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        fill: none;
+      }
+
+      .cls-4 {
+        stroke-width: 1.87px;
+      }
+
+      .cls-10, .cls-5 {
+        stroke-width: 2.38px;
+      }
+
+      .cls-6 {
+        stroke-width: 2.8px;
+      }
+
+      .cls-7 {
+        stroke-width: 3.15px;
+      }
+
+      .cls-8 {
+        stroke: #feb700;
+        stroke-width: 34px;
+      }
+
+      .cls-9 {
+        stroke: red;
+      }
+
+      .cls-10 {
+        stroke: #bbff8f;
+      }
+
+      .cls-11 {
+        fill: #3fa9f5;
+      }
+
+      .cls-12 {
+        fill: #ff7bac;
+      }
+
+      .cls-13 {
+        fill: #ff931e;
+      }
+
+      .cls-14 {
+        fill: #ed1c24;
+      }
+
+      .cls-15 {
+        fill: #93278f;
+      }
+    </style>
+  </defs>
+  <title>banen_med_heste</title>
+  <g id="Banen">
+    <rect class="cls-1" x="123.12" y="108.49" width="1684" height="862.85" rx="146.59"/>
+    <rect class="cls-2" x="139" y="126.5" width="1655" height="826" rx="329.39"/>
+    <rect class="cls-3" x="540" y="403" width="869" height="276" rx="91"/>
+    <rect class="cls-4" x="436.51" y="358.41" width="1060.86" height="366.18" rx="167.94"/>
+    <rect class="cls-5" x="332.48" y="292.81" width="1268" height="497" rx="223.64"/>
+    <rect class="cls-6" x="262.68" y="230.83" width="1408.78" height="620" rx="263.29"/>
+    <rect class="cls-7" x="201.07" y="179.83" width="1532" height="722" rx="296.29"/>
+    <line class="cls-8" x1="1101.03" y1="679" x2="1101.03" y2="952.5"/>
+    <path class="cls-9" d="M1078,715c404-4,402-74,386-115s11-196-94-216-791-21-814,0-80,108-76,163,54,147,66,151S1078,715,1078,715Z"/>
+    <path class="cls-10" d="M1091,757c94,1,364,12,378-11s137-214,94-284-160-138-244-146-788,1-810,9S354,407,363,481s5,222,58,223,83,85,133,53S1091,757,1091,757Z"/>
+    <path class="cls-10" d="M1091,810c415-7,502-20,509-79s21-304,21-304,19-138-152-154-980-15-1015,0-35,20-35,20S302,387,300,435s-18,275,32,295,192,136,208,98S1091,810,1091,810Z"/>
+    <path class="cls-10" d="M1091,864c357,7,509-38,509-38s72-17,71-69,52-213,34-340-305-216-305-216-972.62-8-982.81,0S257,304,263,347s-49,272-35,319S356.07,874,403.54,886.51,1091,864,1091,864Z"/>
+    <path class="cls-10" d="M1091,922c380,0,774-97,692-381s-193-383-232-383H396s-159.95,46.4-160,81.7l0,35.3s-86,161-86,200,43,273,43,273S356,898,363,902s7,0,7,0Z"/>
+  </g>
+  <g id="Kuglerne">
+    <g id="hest1">
+      <circle class="cls-11" cx="1064.5" cy="704.5" r="26"/>
+    </g>
+    <g id="hest2">
+      <circle class="cls-12" cx="1065" cy="757" r="26"/>
+    </g>
+    <g id="hest3">
+      <circle class="cls-13" cx="1065" cy="810" r="26"/>
+    </g>
+    <g id="hest4">
+      <circle class="cls-14" cx="1065" cy="864" r="26"/>
+    </g>
+    <g id="hest5">
+      <circle class="cls-15" cx="1065" cy="922" r="26"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,401 @@
+/* VARIABLER */
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+#hest1 {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.info {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.info span {
+  color: #dc5f11;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info h1 {
+  font-size: 28px;
+}
+
+.info p {
+  font-size: 24px;
+}
+
+@media screen and (min-width: 500px) {
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+svg {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 500px) {
+  svg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*GO KNAPPEN*/
+.go {
+  display: inline-block;
+  position: absolute;
+  top: 53%;
+  left: 40%;
+  cursor: pointer;
+  padding: 10px 30px;
+  right: 0;
+  color: #ffffff;
+  background-color: #feb700;
+
+  border-radius: 30px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+
+  z-index: 10;
+}
+
+.go button:hover,
+.go button:active,
+.go button:focus {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 500px) {
+  .go {
+    position: absolute;
+    z-index: 10;
+    top: 60%;
+    margin: 0 auto;
+    left: 43%;
+    padding: 20px 40px;
+  }
+}
+
+/*COUNTDOWN*/
+.countdown {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.5s ease-in 3s;
+  margin: auto;
+
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
+.countdown-number {
+  font-family: sans-serif;
+  font-size: 70px;
+  color: #feb700;
+  width: 100%;
+  height: 100%;
+}
+
+.countdown-inner {
+  transform: translate(0, 100%);
+  position: relative;
+  height: 100%;
+
+  text-align: center;
+  transition: transform 4s steps(4, start);
+}
+
+.countdown.counting > .countdown-inner {
+  transform: translate(0, -300%);
+  animation: countdown-fade 1s ease-in 3;
+}
+
+.countdown.counting {
+  opacity: 0;
+}
+
+@keyframes countdown-fade {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .countdown {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 0.5s ease-in 3s;
+    margin: auto;
+    position: absolute;
+    z-index: 10;
+    top: 60%;
+    margin: 0 auto;
+    left: 33.3%;
+  }
+
+  .countdown-number {
+    font-family: sans-serif;
+    font-size: 90px;
+    color: #feb700;
+    width: 100%;
+    height: 100%;
+  }
+
+  .countdown-inner {
+    transform: translate(0, 100%);
+    position: relative;
+    height: 100%;
+    font-family: sans-serif;
+    text-align: center;
+    transition: transform 4s steps(4, start);
+  }
+
+  .countdown.counting > .countdown-inner {
+    transform: translate(0, -300%);
+    animation: countdown-fade 1s ease-in 3;
+  }
+
+  .countdown.counting {
+    opacity: 0;
+  }
+
+  @keyframes countdown-fade {
+    0% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+/*SVG*/
+/*HESTENE*/
+
+#Kuglerne {
+  display: none;
+}
+
+.cls-1,
+.cls-2 {
+  stroke: #000;
+}
+
+.cls-1,
+.cls-10,
+.cls-2,
+.cls-3,
+.cls-4,
+.cls-5,
+.cls-6,
+.cls-7,
+.cls-8,
+.cls-9 {
+  stroke-miterlimit: 10;
+}
+
+.cls-1 {
+  stroke-width: 6.87px;
+}
+
+.cls-2 {
+  fill: #8c6239;
+}
+
+.cls-2,
+.cls-9 {
+  stroke-width: 3.5px;
+}
+
+/*BANEN*/
+.cls-3 {
+  fill: #006837;
+  stroke-width: 6px;
+}
+
+.cls-3,
+.cls-4,
+.cls-5,
+.cls-6,
+.cls-7 {
+  stroke: #fff;
+}
+
+.cls-10,
+.cls-4,
+.cls-5,
+.cls-6,
+.cls-7,
+.cls-8,
+.cls-9 {
+  fill: none;
+}
+
+.cls-4 {
+  stroke-width: 1.87px;
+}
+
+.cls-10,
+.cls-5 {
+  stroke-width: 2.38px;
+}
+
+.cls-6 {
+  stroke-width: 2.8px;
+}
+
+.cls-7 {
+  stroke-width: 3.15px;
+}
+
+/*MÅL LINJEN*/
+.cls-8 {
+  stroke: #feb700;
+  stroke-width: 34px;
+}
+
+.cls-9 {
+  stroke: red;
+  opacity: 0;
+}
+
+.cls-10 {
+  stroke: #bbff8f;
+  opacity: 0;
+}
+
+.cls-11 {
+  fill: #dc5f11;
+}
+
+.cls-12,
+.cls-13,
+.cls-14,
+.cls-15 {
+  fill: #414042;
+}
+
+@media screen and (min-width: 500px) {
+  .cls-1,
+  .cls-2 {
+    stroke: #000;
+  }
+
+  .cls-1,
+  .cls-10,
+  .cls-2,
+  .cls-3,
+  .cls-4,
+  .cls-5,
+  .cls-6,
+  .cls-7,
+  .cls-8,
+  .cls-9 {
+    stroke-miterlimit: 10;
+  }
+
+  .cls-1 {
+    stroke-width: 6.87px;
+  }
+
+  .cls-2 {
+    fill: #8c6239;
+  }
+
+  .cls-2,
+  .cls-9 {
+    stroke-width: 3.5px;
+  }
+
+  .cls-3 {
+    fill: #006837;
+    stroke-width: 6px;
+  }
+
+  .cls-3,
+  .cls-4,
+  .cls-5,
+  .cls-6,
+  .cls-7 {
+    stroke: #fff;
+  }
+
+  .cls-10,
+  .cls-4,
+  .cls-5,
+  .cls-6,
+  .cls-7,
+  .cls-8,
+  .cls-9 {
+    fill: none;
+  }
+
+  .cls-4 {
+    stroke-width: 1.87px;
+  }
+
+  .cls-10,
+  .cls-5 {
+    stroke-width: 2.38px;
+  }
+
+  .cls-6 {
+    stroke-width: 2.8px;
+  }
+
+  .cls-7 {
+    stroke-width: 3.15px;
+  }
+
+  .cls-8 {
+    stroke: #feb700;
+    stroke-width: 34px;
+  }
+
+  .cls-9 {
+    stroke: red;
+    opacity: 0;
+  }
+
+  .cls-10 {
+    stroke: #bbff8f;
+    opacity: 0;
+  }
+
+  .cls-11 {
+    fill: #dc5f11;
+  }
+
+  .cls-12,
+  .cls-13,
+  .cls-14,
+  .cls-15 {
+    fill: #414042;
+  }
+}

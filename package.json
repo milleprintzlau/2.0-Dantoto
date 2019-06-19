@@ -1,0 +1,21 @@
+{
+  "name": "site_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "javascript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watchsass": "node-sass --output-style expanded Style/myfile.scss Style/output.css -w",
+    "watchsassScene1": "node-sass --output-style expanded style/myfileScene1.scss style/outputScene1.css -w",
+    "watchsassBanen": "node-sass --output-style expanded style/myfileBanen.scss style/outputBanen.css -w",
+    "watchsassForm2": "node-sass --output-style expanded style/myfileForm2.scss style/outputForm2.css -w",
+    "watchsassRangliste": "node-sass --output-style expanded style/myfileRangliste.scss style/outputRangliste.css -w",
+    "watchsassGoal": "node-sass --output-style expanded style/myfileGoal.scss style/outputGoal.css -w",
+    "watchsassHest": "node-sass --output-style expanded style/myfileHest.scss style/outputHest.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

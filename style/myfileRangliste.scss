@@ -1,0 +1,87 @@
+/* VARIABLER */
+$font-stack: "Open Sans", sans-serif;
+$dantoto-primary-color: #dc5f11;
+$dantoto-sek-color: #ae4a0c;
+$DKspil-primary-color: #feb700;
+
+/* GENERELT */
+body {
+  background-color: $dantoto-primary-color;
+  font-family: $font-stack;
+  img {
+    width: 100%;
+  }
+  h1,
+  h2,
+  li,
+  p {
+    color: #ffffff;
+  }
+}
+
+section {
+  width: 600px;
+  height: auto;
+  margin: auto;
+
+  .vinder {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    margin: auto;
+    width: 500px;
+    img {
+      width: 100%;
+      border-radius: 50%;
+      max-width: 100px;
+    }
+  }
+  .rangliste {
+    border: solid 1px black;
+    margin: auto;
+    width: 600px;
+    h1 {
+      text-align: center;
+    }
+    ol {
+      margin-left: 2vw;
+    }
+  }
+  .saldo {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    margin-top: 1vw;
+    grid-gap: 5px;
+    .nysaldo {
+      display: grid;
+      grid-template-columns: auto auto;
+      border: solid 1px black;
+      width: 300px;
+      padding-left: 1vw;
+
+      h1 {
+        margin: 0;
+      }
+      p {
+        margin-top: 7px;
+        margin-bottom: 0;
+      }
+    }
+    .knap {
+      cursor: pointer;
+      width: 12vh;
+      height: 5vh;
+      right: 0;
+      color: #ffffff;
+      background-color: $DKspil-primary-color;
+      border-radius: 20px;
+      box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+      transition: all 0.2s;
+    }
+    button:hover,
+    button:active,
+    button:focus {
+      transform: scale(1.1);
+    }
+  }
+}

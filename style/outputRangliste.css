@@ -1,0 +1,177 @@
+/* VARIABLER */
+
+body {
+  background-color: rgba(255, 255, 255, 0.6);
+  font-family: "Open Sans", sans-serif;
+}
+
+body h1,
+body h2 {
+  color: black;
+  text-align: center;
+}
+
+section {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 500px) {
+  section {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+/*Billede og tekst*/
+
+section .vinder {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  margin: auto;
+}
+
+/*Billede af vinderen*/
+
+section .vinder img {
+  width: 50%;
+  height: auto;
+  max-width: 100px;
+}
+
+@media screen and (min-width: 500px) {
+  section .vinder img {
+    width: 50%;
+    height: 130px;
+    max-width: 100px;
+  }
+}
+
+/*Ranglisten kasse*/
+section .rangliste {
+  border: solid 1px black;
+  margin: auto;
+  width: 100%;
+}
+
+section .vinder h1 {
+  color: #feb700;
+  margin: auto;
+}
+
+@media screen and (min-width: 500px) {
+  section .vinder h1 {
+    position: relative;
+    top: 20%;
+  }
+}
+
+/*SALDO*/
+
+section .saldo {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 1vw;
+  grid-gap: 5px;
+  text-align: center;
+}
+
+section .saldo .nysaldo {
+  display: grid;
+  grid-template-columns: auto auto;
+  border: solid 1px black;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+section .saldo .nysaldo h1 {
+  font-size: 15px;
+  font-style: bolder;
+}
+
+section .saldo .nysaldo p {
+  font-size: 15px;
+  font-style: bolder;
+}
+
+/*KNAPPERNE TIL SPIL IGEN OG SPIL OM PENGE*/
+section .saldo .knap {
+  cursor: pointer;
+  height: 10vw;
+  width: 80%;
+  margin: auto;
+  right: 0;
+  color: #ffffff;
+  background-color: #feb700;
+  border-radius: 20px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+
+section .saldo button:hover,
+section .saldo button:active,
+section .saldo button:focus {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 500px) {
+  section .rangliste {
+    border: solid 1px black;
+    margin: auto;
+    width: 100%;
+  }
+
+  section .rangliste h1 {
+    text-align: center;
+  }
+
+  section .rangliste ol {
+    margin-left: 2vw;
+  }
+
+  section .saldo {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 1vw;
+    grid-gap: 5px;
+  }
+
+  section .saldo .nysaldo {
+    display: grid;
+
+    border: solid 1px black;
+    width: 100%;
+    padding-left: 1vw;
+  }
+
+  section .saldo .nysaldo h1 {
+    margin: 0;
+    font-size: 15px;
+    margin-top: 7px;
+  }
+
+  section .saldo .nysaldo p {
+    margin-top: 7px;
+    margin-bottom: 0;
+  }
+
+  section .saldo .knap {
+    cursor: pointer;
+    width: 100%;
+    height: 5vw;
+    right: 0;
+    color: #ffffff;
+    background-color: #feb700;
+    border-radius: 20px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+  }
+
+  section .saldo button:hover,
+  section .saldo button:active,
+  section .saldo button:focus {
+    transform: scale(1.1);
+  }
+}

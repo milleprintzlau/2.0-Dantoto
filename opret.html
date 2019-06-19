@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Opret bruger</title>
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style/outputForm2.css" />
+  </head>
+  <body>
+    <!-- KORREKT MODAL -->
+    <div id="modalen">
+      <div class="funds-success-message-container">
+        <div class="funds-checkmark-text-container">
+          <div class="funds-checkmark-container">
+            <div class="funds-display-on-ie">
+              <svg
+                class="funds-ie-checkmark"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 52 52"
+              >
+                <circle
+                  class="funds-ie-checkmark-circle"
+                  cx="26"
+                  cy="26"
+                  r="25"
+                  fill="none"
+                />
+                <path
+                  class="funds-ie-checkmark-check"
+                  fill="none"
+                  d="M14.1 27.2l7.1 7.2 16.7-16.8"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <h1 class="funds-success-done-text">Velkommen!</h1>
+        </div>
+        <div class="funds-success-message">
+          <h2>Du er nu oprettet som bruger</h2>
+          <a href="scene_1.html"> <p>Fortsæt til spillet</p></a>
+        </div>
+      </div>
+    </div>
+    <!-- FORKERT MODAL -->
+    <div id="modalen_wrong">
+      <div class="wrong-container">
+        <h1 class="text">Noget gik galt!</h1>
+        <h2>Du er allerede oprettet med denne mail</h2>
+        <button class="luk"><p>Prøv igen</p></button>
+      </div>
+    </div>
+
+    <!-- FORM-->
+    <div class="modal">
+      <div class="modal__content">
+        <div class="hej">
+          <h2>Opret din bruger</h2>
+          <p>
+            Opret en bruger og spil med gratis, start spillet hvor du sidst
+            sluttede og få dit brugernavn op på ranglisten. <br />
+            Lad os komme i gang
+          </p>
+          <strong> <p>Opret en bruger med:</p></strong>
+          <div class="wrap-knap">
+            <button class="fb-but">Facebook</button>
+            <button class="fb-but dantoto">BLÅ KONTO</button>
+          </div>
+          <strong><p>Eller opret med din e-mail her:</p></strong>
+        </div>
+        <form id="add">
+          <ul class="form-list">
+            <li class="form-list__row">
+              <label>Vælg brugernavn</label> <br />
+              <input
+                type="text"
+                name="brugernavn"
+                required=""
+                placeholder="Fx. Mr. Mandu"
+              />
+            </li>
+
+            <li class="form-list__row">
+              <label>E-mail</label> <br />
+              <input
+                type="email"
+                name="mail"
+                required=""
+                placeholder="Fx. anders@hotmail.com"
+              />
+            </li>
+            <li class="form-list__row">
+              <label>Vælg kode</label> <br />
+              <input
+                type="password"
+                name="kode"
+                required=""
+                placeholder="*********"
+              />
+            </li>
+
+            <li>
+              <button method="post" class="button">
+                OPRET BRUGER
+              </button>
+            </li>
+            <a href="scene_1.html"
+              ><p class="tilbage">Jeg har allerede en bruger</p></a
+            >
+          </ul>
+        </form>
+      </div>
+    </div>
+
+    <script src="javascript/formJavascript.js"></script>
+  </body>
+</html>

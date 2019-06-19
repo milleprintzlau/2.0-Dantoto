@@ -1,0 +1,735 @@
+/* GENERELT */
+html {
+  background: url(../img/baggrunden-01.png) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 70%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+}
+
+/*HEADER*/
+
+/*BURGERMENU MOBIL*/
+
+.mobil {
+  display: grid;
+  background-color: rgba(146, 165, 96, 0.43);
+  width: 100%;
+}
+.mobil_nav {
+  display: none;
+}
+.burgermenu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgba(146, 165, 96, 0.43);
+}
+.burger {
+  cursor: pointer;
+  border: none;
+  justify-self: end;
+  padding-bottom: 3em;
+  padding-right: 3em;
+  padding-left: 3em;
+  padding-top: 2em;
+}
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+.nav_burger_logo {
+  width: 100%;
+  height: auto;
+}
+.nav_burger_logo:hover {
+  opacity: 0.6;
+}
+
+header li {
+  padding-top: 30px;
+  cursor: pointer;
+  text-align: center;
+
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header a:hover {
+  color: darkgrey;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 30px;
+  height: 1px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+nav {
+  overflow: hidden;
+  transition: 0s;
+}
+.topnav {
+  display: none;
+}
+
+nav.show {
+  max-height: 500px;
+  display: block;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-2px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-4px, -8px);
+}
+
+.desktop_nav {
+  display: none;
+}
+
+/*NAVIGATION PÅ TABLET*/
+@media screen and (min-width: 767px) {
+  .mobil {
+    display: grid;
+    background-color: #92a560;
+    width: 100%;
+  }
+  .mobil_nav {
+    display: none;
+  }
+  .burgermenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #92a560;
+  }
+  .burger {
+    cursor: pointer;
+    border: none;
+    justify-self: end;
+    padding-bottom: 3em;
+    padding-right: 3em;
+    padding-left: 3em;
+    padding-top: 3em;
+  }
+  header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    height: 200px;
+  }
+  .nav_burger_logo {
+    width: 100%;
+    height: auto;
+  }
+  .nav_burger_logo:hover {
+    opacity: 0.6;
+  }
+
+  header li {
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+
+  header a {
+    text-decoration: none;
+    color: white;
+  }
+
+  header a:hover {
+    color: darkgrey;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  nav {
+    overflow: hidden;
+    transition: 0s;
+  }
+  .topnav {
+    display: none;
+  }
+
+  nav.show {
+    max-height: 500px;
+    display: block;
+  }
+
+  .change .bar1 {
+    transform: rotate(-45deg) translate(-2px, 6px);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    transform: rotate(45deg) translate(-4px, -8px);
+  }
+
+  .desktop_nav {
+    display: none;
+  }
+}
+
+/*NAVIGATION PÅ DESKTOP*/
+@media screen and (min-width: 1000px) {
+  main {
+    padding: 30px;
+  }
+
+  .burgermenu {
+    display: none;
+  }
+
+  .mobil {
+    display: none;
+  }
+
+  .topnav {
+    width: 100%;
+    display: block;
+  }
+
+  .desktop_nav {
+    display: grid;
+    background-color: #92a560;
+  }
+
+  .billede_li {
+    cursor: pointer;
+  }
+
+  .nav_logo {
+    width: 100%;
+  }
+
+  .nav_logo:hover {
+    opacity: 0.6;
+  }
+
+  header ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+
+    text-decoration: none;
+  }
+
+  .links {
+    padding-top: 15%;
+  }
+}
+
+/*SECTION 1         TEKSTEN & SPILLET*/
+.hint {
+  background: -webkit-linear-gradient(
+    top,
+    #fff1b3 15%,
+    #feb700 35%,
+    #fff1b3 70%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2em;
+  text-align: center;
+}
+
+/* TABLET*/
+@media screen and (min-width: 500px) {
+  .hint {
+    font-size: 2.5em;
+  }
+}
+
+/* DESKTOP*/
+@media screen and (min-width: 1000px) {
+  .hint {
+    font-size: 2.5em;
+  }
+}
+
+/*SPILLET*/
+.sidebar-right {
+  width: 80%;
+  margin: auto;
+  box-shadow: 0px 40px 20px 0px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+/* TABLET*/
+@media screen and (min-width: 500px) {
+  .sidebar-right {
+    padding: 0.5rem;
+  }
+}
+/* DESKTOP*/
+@media screen and (min-width: 1000px) {
+  /*ØVRE SEKTION*/
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 4vw;
+  }
+
+  .sidebar-right {
+    width: 100%;
+    box-shadow: 10px 10px 10px 10px;
+  }
+}
+
+/*SECTION 2         PROGRESS BAR */
+
+/*INFO TEKST*/
+.fordele {
+  text-transform: uppercase;
+  font-size: 1em;
+  margin-top: 15%;
+  text-align: center;
+}
+
+/* PROGRESS BAR */
+
+#progressbar {
+  text-align: center;
+  counter-reset: step;
+  width: 100%;
+}
+
+#progressbar li {
+  list-style: none;
+  color: white;
+}
+
+#progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 100%;
+  display: block;
+  background-color: #feb700;
+  margin: 0 auto;
+}
+
+#progressbar h1 {
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+#progressbar p {
+  color: black;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+/* TABLET*/
+@media screen and (min-width: 700px) {
+  #progressbar li {
+    list-style: none;
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    color: white;
+    padding: 10px;
+  }
+
+  .container #progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border: 2px solid #feb700;
+    border-radius: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    background-color: #feb700;
+  }
+
+  #progressbar p {
+    color: black;
+    margin: auto;
+    font-size: 1em;
+  }
+
+  #progressbar h1 {
+    font-size: 1.2em;
+  }
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 1000px) {
+  #progressbar {
+    margin-bottom: 10%;
+
+    padding: 40px;
+  }
+
+  #progressbar li:before {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+  }
+}
+
+/*SECTION 3         LYNSPILLET*/
+
+.lynspil {
+  width: 60%;
+  font-size: 14px;
+  height: auto;
+  margin: auto;
+}
+
+/*TEKSTEN DER SKRIVES*/
+.lynspiltxt {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  color: black;
+}
+.infomation_lynspil {
+  color: black;
+  text-align: center;
+  font-size: 2em;
+}
+
+/*LYNSPILLET BOXE*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #dc5f11;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #dc5f11;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #fff1b3;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.lynspil .lynspillet {
+  background-color: #dc5f11;
+  border-radius: 12px;
+
+  color: black;
+  font-size: 15px;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.lynspil .lynspillet p {
+  color: white;
+}
+
+.lynspil .lynspillet h1 {
+  color: white;
+  font-size: 24px;
+  background-color: #feb700;
+}
+
+.lynspil .checkbox {
+  font-size: 10px;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.amount {
+  width: 90%;
+  font-size: 1em;
+  text-align: center;
+  height: 30%;
+  position: relative;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+
+  border: 3 solid white;
+  background-color: #dc5f11;
+  color: white;
+
+  padding: 10px 30px;
+  margin-bottom: 10%;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+@media screen and (min-width: 500px) {
+  .lynspil {
+    width: 300px;
+    margin: auto;
+  }
+}
+
+/*VIDEO*/
+
+#nyhed {
+  display: none;
+}
+
+/* TABLET*/
+@media screen and (min-width: 500px) {
+  #nyhed {
+    display: none;
+  }
+}
+
+/* DESKTOP*/
+@media screen and (min-width: 1000px) {
+  #nyhed {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .mobil_version {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 140px;
+    line-height: 2cm;
+    padding-left: 40px;
+  }
+
+  #nyhed img {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+/*FOOTER*/
+footer {
+  background-color: #92a560;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 120px;
+}
+
+#adresse {
+  padding-top: 40px;
+}
+
+footer img {
+  width: 100%;
+  height: auto;
+}
+
+#tider img {
+  width: 50%;
+  margin-top: 20px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.kundeservice {
+  background-color: #feb700;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 10%;
+}
+
+/* TABLET*/
+@media screen and (min-width: 700px) {
+  #tider img {
+    width: 50%;
+  }
+}
+
+/*DESKTOP*/
+
+@media screen and (min-width: 1024px) {
+  /*FOOTER*/
+  footer {
+    background-color: #92a560;
+    color: white;
+    opacity: 0.8;
+
+    width: 100%;
+  }
+
+  #footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 2vw;
+    margin-right: 4vw;
+    text-align: left;
+  }
+
+  .kundeservice {
+    background-color: #feb700;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10%;
+  }
+
+  #persondata {
+    flex-basis: 100px;
+  }
+
+  #kontakt {
+    flex-basis: 100px;
+  }
+
+  #adresse {
+    flex-basis: 100px;
+  }
+
+  #tider {
+    flex-basis: 250px;
+  }
+
+  #tider img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "#1",
+    "Hestens_navn": "LANDING GEAR",
+    "img": "img/horsehead1.png",
+    "Jockeys_navn": "Ulf Ohlsson",
+    "Beskrivelse": "Denne 4 årige valak har vundet sit 5. løb i streg med Ulf Ohlsson. På trods af et længere sygdomsforløb, er disse to makkerpar fuldstændig ustoppelige i øjeblikket.",
+    "Odds": 3
+  },
+  {
+    "id": "#2",
+    "Hestens_navn": "LINE SELECT",
+    "img": "img/horsehead2.png",
+    "Jockeys_navn": "Rodney Gatt",
+    "Beskrivelse": "Denne 4 årige hoppe er den eneste kvinde på banen i dag. Mon hun kan stjæle koncentrationen hos de andre hingste? Det er i hvert fald hendes eneste chance for at vinde løbet i dag. Line Select og den nye Jockey Rodney Gatt har ikke vundet et løb sammen endnu.",
+    "Odds": 5
+  },
+  {
+    "id": "#3",
+    "Hestens_navn": "HERSEY BOKO ATTACK",
+    "img": "img/horsehead3.png",
+    "Jockeys_navn": "Mika Forss",
+    "Beskrivelse": "Nu kommer vi til dagens helt store favorit. Denne 5 årige hingst har mange premier i bagagen. Jockeyen, Mika Fross, er også ejer af denne elegante hest. De har et specielt knyttet bånd. Senest vandt de V65 Grand Prix i Frankrig. ",
+    "Odds": 2
+  },
+  {
+    "id": "#4",
+    "Hestens_navn": "ATHOS DE MARLAU",
+    "img": "img/horsehead4.png",
+    "Jockeys_navn": "Yannick Gingras",
+    "Beskrivelse": "En skadesramt hest er endelig på banen igen. Vi har set frem til at se denne smukke valak i aktion igen - denne gang bliver det dog med en ny jockey, nemlig Yannick Gingras, som sidste søndag skiftede sin 7-årige hoppe, HONEY BUNNY, ud med denne fantastiske hest.",
+    "Odds": 4
+  },
+  {
+    "id": "#5",
+    "Hestens_navn": "BOULDER PEARL",
+    "img": "img/horsehead5.png",
+    "Jockeys_navn": "Eirik Höitomt ",
+    "Beskrivelse": "Vi er kommet til løbets ældste hest. BOULDER PEARL fra Findalnd plejer at være en sikker vinder, men efter en operation i knæet sidste sommer, har han stået stille det sidste halve år. Vi er spændt på at se, om den erfarne jockey, Eirik Höitomt, har trænet ham godt nok op til løbet.",
+    "Odds": 7
+  }
+]

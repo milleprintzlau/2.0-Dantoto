@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- TITEL OG BESKRIVELSE  -->
+    <title>Velkommen til Gallopperiet</title>
+    <meta
+      name="description"
+      content="Spil hestevæddeløb nu. Lav din egen vinderkupon."
+    />
+    <!-- FONT  -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- STYLE  -->
+    <link rel="stylesheet" href="style/outputScene1.css" />
+  </head>
+  <body>
+    <!-- INDHOLD  -->
+    <div class="velkommen">
+      <h1>Velkommen til <span>Gallopperiet</span></h1>
+      <p>Her er din kupon</p>
+    </div>
+
+    <!-- MENU MODAL -->
+    <section id="modal">
+      <!-- FORM-->
+      <div class="modalen">
+        <div class="modal__container">
+          <div class="modal__content">
+            <div class="logindWrap">
+              <button class="luk">X</button>
+              <h2>LOG IND</h2>
+              <p>
+                Log ind med din bruger og spil med gratis, start spillet hvor du
+                sidst sluttede og få dit brugernavn op på ranglisten.
+                <br />
+                Lad os komme i gang
+              </p>
+            </div>
+            <form>
+              <ul class="form-list">
+                <li class="form-list__row">
+                  <label>Brugernavn</label> <br />
+                  <input type="text" name="" placeholder="Mandu" />
+                </li>
+
+                <li class="form-list__row">
+                  <label>Kode</label> <br />
+                  <input type="password" name="" placeholder="*********" />
+                </li>
+
+                <li>
+                  <button class="button" id="logind">
+                    <a href="banen.html">LOG IND</a>
+                  </button>
+                  <button class="button" id="opret">
+                    <a href="opret.html">OPRET EN BRUGER</a>
+                  </button>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAKTABOKSE M. SVG -->
+    <div class="faktaboks1">
+      <svg
+        id="Layer_1"
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        width="151.37mm"
+        height="55.44mm"
+        viewBox="0 0 429.07 157.15"
+      >
+        <defs></defs>
+        <title>boks1</title>
+        <rect class="cls-1" x="4.27" y="53.2" width="419.33" height="101.28" />
+        <rect
+          class="cls-1"
+          x="182.95"
+          y="17.7"
+          width="70.99"
+          height="70.99"
+          transform="translate(26.37 170.05) rotate(-45)"
+        />
+        <text class="cls-2" transform="translate(100.49 89.73)">
+          Her ser du din nuværende saldo.
+          <tspan class="cls-3">
+            <tspan x="-20.99" y="28.8">
+              Når du har valgt hvor mange penge du vil oddse
+            </tspan>
+            <tspan x="-82" y="43.2">
+              og på hvilken hest, kan du se den givenst du har mulighed for at
+              vinde
+            </tspan>
+          </tspan>
+        </text>
+      </svg>
+
+      <button class="next1">☞</button>
+    </div>
+    <div class="faktaboks2">
+      <svg
+        id="Layer_1"
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        width="151.37mm"
+        height="55.44mm"
+        viewBox="0 0 429.07 157.15"
+      >
+        <defs></defs>
+        <title>boks2</title>
+        <rect class="cls-1" x="4.27" y="53.2" width="419.33" height="101.28" />
+        <rect
+          class="cls-1"
+          x="182.95"
+          y="17.7"
+          width="70.99"
+          height="70.99"
+          transform="translate(26.37 170.05) rotate(-45)"
+        />
+        <text class="cls-2" transform="translate(89.31 87.83)">
+          <tspan xml:space="preserve">Vælg hvor mange penge du vil oddse</tspan>
+          <tspan class="cls-3">
+            <tspan x="-63.8" y="28.8">
+              Her kan du vælge hvor mange penge du vil oddse på din vinderhest
+            </tspan>
+          </tspan>
+        </text>
+      </svg>
+
+      <button class="next2">☞</button>
+    </div>
+    <div class="faktaboks3">
+      <svg
+        id="Layer_1"
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        width="151.37mm"
+        height="55.44mm"
+        viewBox="0 0 429.07 157.15"
+      >
+        <defs></defs>
+        <title>boks3</title>
+        <rect class="cls-1" x="4.27" y="53.2" width="419.33" height="101.28" />
+        <rect
+          class="cls-1"
+          x="182.95"
+          y="17.7"
+          width="70.99"
+          height="70.99"
+          transform="translate(26.37 170.05) rotate(-45)"
+        />
+        <text class="cls-2" transform="translate(73.16 72.62)">
+          <tspan xml:space="preserve">
+            Ved klik på pilen kan du læse mere om hesten.
+          </tspan>
+          <tspan class="cls-3">
+            <tspan x="-53.25" y="28.8">
+              Odds-nummeret fortæller dig hvor mange gange du får dine oddsede
+            </tspan>
+            <tspan x="101.42" y="43.2">penge tilbage.</tspan>
+            <tspan x="-68.72" y="57.6">
+              Træt af hovedregning? Husk at du kan se din mulige gevinst under
+              “Din evt.
+            </tspan>
+            <tspan x="118.83" y="72">gevinst”</tspan>
+          </tspan>
+        </text>
+      </svg>
+
+      <button class="lukbox">X</button>
+    </div>
+
+    <main>
+      <!--TEMPLATE-->
+      <div class="data-container" id="horses"></div>
+
+      <template id="heste-template">
+        <article class="heste-article hest">
+          <img class="data-billede" src="" alt="" />
+          <div class="tekst">
+            <p class="data-id"></p>
+            <h1 class="data-hestenavn"></h1>
+            <p class="data-jockeynavn"></p>
+          </div>
+          <div class="read">
+            <p class="data-odds"></p>
+            <input type="checkbox" class="choose" data-odds="" />
+            <p class="more">﹀</p>
+          </div>
+          <p class="data-beskrivelse info"></p>
+          <!--  <p class="data-odds"></p> -->
+        </article>
+      </template>
+
+      <section id="saldo">
+        <div class="bet">
+          <label> 20 kr<input type="checkbox" class="tyve" /> </label>
+          <label> 100 kr<input type="checkbox" class="ethund" /> </label>
+          <label> 50 kr<input type="checkbox" class="halvtreds" /> </label>
+          <label>200 kr<input type="checkbox" class="tohund"/></label>
+        </div>
+        <div class="dinSaldo">
+          <h1>DIN SALDO:</h1>
+          <p class="kr">100 kr.</p>
+        </div>
+        <div class="dinSaldo">
+          <h1>DIN MULIGE GEVINST:</h1>
+          <p class="gevinst">0 kr.</p>
+        </div>
+      </section>
+      <section class="wrap">
+        <button id="knap">GO!</button>
+      </section>
+    </main>
+
+    <script src="javascript/javascriptScene1.js"></script>
+  </body>
+</html>

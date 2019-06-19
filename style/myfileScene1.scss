@@ -1,0 +1,477 @@
+/* VARIABLER */
+$font-stack: "Open Sans", sans-serif;
+$dantoto-primary-color: #dc5f11;
+$dantoto-sek-color: #ae4a0c;
+$DKspil-primary-color: #feb700;
+
+/* GENERELT */
+body {
+  background-color: white;
+  font-family: $font-stack;
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+
+/* HEADER & NAV */
+#nav {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(
+    to bottom,
+    $dantoto-sek-color 0%,
+    $dantoto-primary-color 100%
+  );
+  img {
+    width: 160px;
+  }
+  p {
+    display: inline-block;
+    margin: 01vw 2vw 2vw 2vw;
+    float: right;
+    color: white;
+  }
+}
+
+/* VELKOMMEN DIV */
+
+.velkommen {
+  width: 500px;
+  height: auto;
+  margin: auto;
+  line-height: 20px;
+  text-align: center;
+  span {
+    color: $dantoto-primary-color;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+/* VÆLG HESTE */
+
+main {
+  padding: 1vw;
+  margin-left: 20%;
+  width: 90vh;
+  height: auto;
+  border: solid 1px black;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: 0.5fr 1fr;
+  .wrap {
+    padding: 1vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
+#horses {
+  width: 40vh;
+  height: auto;
+  background-color: white;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+.hest {
+  width: 100%;
+  height: auto;
+  background-color: whitesmoke;
+  border: solid 1px black;
+  display: grid;
+  grid-template-columns: 0.6fr 1fr 0.5fr;
+  img {
+    width: 100%;
+    max-width: 40px;
+    margin: auto;
+  }
+  .tekst {
+    line-height: 0;
+  }
+
+  border-bottom: solid 1px black;
+  .read {
+    line-height: 0;
+  }
+  .more {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .data-odds {
+    margin-left: 3px;
+  }
+  .info {
+    line-height: 1;
+    grid-column: 1 / span 3;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    margin-top: 0;
+    display: none;
+  }
+  h1 {
+    font-size: 14px;
+  }
+}
+/* BET */
+#saldo {
+  width: auto;
+  border: solid 1px black;
+
+  .bet {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    margin-top: 0.5vw;
+  }
+  .dinSaldo {
+    display: grid;
+    grid-template-columns: auto auto;
+    border: solid 1px black;
+    p {
+      font-size: 20px;
+      margin: 0.3vw;
+    }
+    h1 {
+      margin: 0.3vw;
+    }
+    margin: 1vw 1vw 0vw 1vw;
+
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+  }
+}
+
+/* NEDRE SEKTION */
+
+#billede-section {
+  img {
+    width: 100%;
+    //border-radius: 50%;
+    max-width: 250px;
+  }
+}
+
+#knap {
+  cursor: pointer;
+  width: 12vh;
+  height: 5vh;
+  margin-top: 12.5vw;
+  color: #ffffff;
+  background-color: $DKspil-primary-color;
+
+  border-radius: 20px;
+
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+button:hover,
+button:active,
+button:focus {
+  transform: scale(1.1);
+}
+
+/* FORM */
+form {
+  .button {
+    color: #ffffff;
+    background-color: $DKspil-primary-color;
+    padding: 12px 25px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 20px;
+    outline: 0;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+    cursor: pointer;
+    a {
+      color: #ffffff;
+    }
+  }
+}
+
+/* input:valid {
+  border-color: #24cf5f;
+} */
+
+.form-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.form-list__row {
+  margin-bottom: 25px;
+}
+
+.form-list__row label {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: #939393;
+}
+
+.modalen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vw;
+  img {
+    padding-top: 80px;
+    width: 100%;
+    //border-radius: 50%;
+  }
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  input {
+    min-height: 30px;
+    width: 90%;
+    padding-left: 5px;
+    padding-right: 5px;
+    letter-spacing: 0.5px;
+    border: 0;
+    border-bottom: 2px solid #f0f0f0;
+  }
+
+  input[type="tel"] {
+    width: 30%;
+  }
+
+  input:focus {
+    outline: none;
+    border-color: $dantoto-primary-color;
+  }
+}
+
+.modal__container {
+  display: flex;
+  width: 675px;
+  height: 100%;
+  margin-bottom: 125px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
+}
+
+.modal__featured {
+  position: relative;
+  flex: 1;
+  min-width: 230px;
+  padding: 20px;
+  overflow: hidden;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.modal__circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200%;
+  width: 200%;
+  background-color: $dantoto-primary-color;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-25%);
+}
+
+.modal__product {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  max-width: 85%;
+  transform: translateX(calc(-50% - 10px));
+}
+
+.modal__product2 {
+  position: absolute;
+  top: 25%;
+  left: 70%;
+  width: 100%;
+  transform: translateX(calc(-50% - 10px));
+  font-size: 12px;
+  line-height: 2;
+  color: white;
+}
+
+.modal__content {
+  padding: 40px 30px;
+  width: 700px;
+}
+
+.fb-but {
+  height: 40px;
+  width: 150px;
+  color: white;
+  background-color: #4167b2;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+
+.hej {
+  text-align: center;
+  p {
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+.wrap-knap {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+/* MODAL  */
+
+#modal {
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  /*display: none;*/
+  opacity: 0;
+  pointer-events: none;
+  transition: 1s;
+}
+
+#modal.vis {
+  /*display: block;*/
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s;
+}
+
+.luk {
+  float: right;
+  border: 1px solid;
+  height: 20px;
+  cursor: pointer;
+}
+
+// FAKTABOKSE
+
+.faktaboks1 {
+  position: absolute;
+  top: 15vw;
+  left: 70vw;
+
+  svg {
+    width: 100%;
+    height: auto;
+    max-width: 380px;
+  }
+  button {
+    color: #ffffff;
+    background-color: $dantoto-primary-color;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    left: 21vw;
+    top: 6vw;
+    font-weight: bold;
+  }
+  .cls-1 {
+    fill: $dantoto-primary-color;
+  }
+
+  .cls-2 {
+    font-size: 14px;
+    fill: white;
+    font-family: OpenSans-Bold, Open Sans;
+    font-weight: 700;
+  }
+
+  .cls-3 {
+    font-size: 12px;
+    font-family: OpenSans, Open Sans;
+    font-weight: 400;
+  }
+}
+.faktaboks2 {
+  position: absolute;
+  top: 10vw;
+  left: 70vw;
+  display: none;
+
+  svg {
+    width: 100%;
+    height: auto;
+    max-width: 380px;
+  }
+  button {
+    color: #ffffff;
+    background-color: $dantoto-primary-color;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    left: 21vw;
+    top: 6vw;
+    font-weight: bold;
+  }
+  .cls-1 {
+    fill: $dantoto-primary-color;
+  }
+
+  .cls-2 {
+    font-size: 14px;
+    fill: white;
+    font-family: OpenSans-Bold, Open Sans;
+    font-weight: 700;
+  }
+
+  .cls-3 {
+    font-size: 12px;
+    font-family: OpenSans, Open Sans;
+    font-weight: 400;
+  }
+}
+.faktaboks3 {
+  position: absolute;
+  top: 10vw;
+  left: 43vw;
+  display: none;
+
+  svg {
+    width: 100%;
+    height: auto;
+    max-width: 380px;
+  }
+  button {
+    color: #ffffff;
+    background-color: $dantoto-primary-color;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    left: 23vw;
+    top: 8vw;
+    font-weight: bold;
+  }
+  .cls-1 {
+    fill: $dantoto-primary-color;
+  }
+
+  .cls-2 {
+    font-size: 14px;
+    fill: white;
+    font-family: OpenSans-Bold, Open Sans;
+    font-weight: 700;
+  }
+
+  .cls-3 {
+    font-size: 12px;
+    font-family: OpenSans, Open Sans;
+    font-weight: 400;
+  }
+}

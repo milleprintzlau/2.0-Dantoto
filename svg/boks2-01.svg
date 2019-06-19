@@ -1,0 +1,25 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="151.37mm" height="55.44mm" viewBox="0 0 429.07 157.15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f08339;
+      }
+
+      .cls-2 {
+        font-size: 12px;
+        fill: #1d1d1b;
+        font-family: OpenSans-Bold, Open Sans;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        font-family: OpenSans, Open Sans;
+        font-weight: 400;
+      }
+    </style>
+  </defs>
+  <title>boks2</title>
+  <rect class="cls-1" x="4.27" y="53.2" width="419.33" height="101.28"/>
+  <rect class="cls-1" x="182.95" y="17.7" width="70.99" height="70.99" transform="translate(26.37 170.05) rotate(-45)"/>
+  <text class="cls-2" transform="translate(89.31 87.83)"><tspan xml:space="preserve">          Vælg hvor mange penge du vil oddse</tspan><tspan class="cls-3"><tspan x="-63.8" y="28.8">Her kan du vælge hvor mange penge du vil oddse på din vinderhest</tspan></tspan></text>
+</svg>

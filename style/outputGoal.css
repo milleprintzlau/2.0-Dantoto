@@ -1,0 +1,85 @@
+/* VARIABLER */
+/* GENERELT */
+body {
+  background-color: #8c6339;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+}
+
+#Layer_1 {
+  color: #f2f;
+  animation: flash linear 1s 2;
+  background-size: cover;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cls-1 {
+  fill: #009444;
+  opacity: 0.5;
+}
+
+.cls-1,
+.cls-4,
+.cls-5,
+.cls-6 {
+  stroke: #414042;
+  stroke-width: 8px;
+}
+
+#vinder {
+  fill: #dc5f11;
+}
+
+.cls-1,
+.cls-2,
+.cls-4,
+.cls-5,
+.cls-6 {
+  stroke-miterlimit: 10;
+}
+
+.cls-2,
+.cls-4 {
+  fill: none;
+}
+
+.cls-2 {
+  stroke: #fdb714;
+  stroke-width: 42.46px;
+}
+
+.cls-3 {
+  fill: #8c6339;
+}
+
+.cls-5 {
+  fill: #414042;
+}
+
+.cls-6 {
+  fill: #fdb714;
+}
+
+.cls-7 {
+  fill: #515251;
+}

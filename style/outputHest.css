@@ -1,0 +1,32 @@
+/* VARIABLER */
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+#walking_horse {
+  background-image: url(../svg/heste_walk.svg);
+  height: 300px;
+  width: 400px;
+  margin: auto;
+  animation: walk 1s steps(15) infinite, forward 7s linear infinite;
+}
+
+@keyframes walk {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 6006px;
+  }
+}
+
+@keyframes forward {
+  0% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(-900px);
+  }
+}
